@@ -1,0 +1,237 @@
+body {
+  background-color: rgb(45, 55, 72);
+  color: #ededee;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.first-content {
+  flex: 1 1 auto;
+  max-width: 1600px;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+  max-width: 130em;
+}
+
+.up-signature {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 5px;
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 4rem;
+}
+
+up-signature::before {
+  box-sizing: border-box;
+  background-color: rgb(22, 115, 255);
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.button-area {
+  margin-top: 40px;
+  display: flex;
+}
+
+.main-header {
+  font-size: 72px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.main-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.left-side {
+  display: flex;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.button-area a {
+  text-decoration: none;
+}
+
+.main-btn {
+  display: inline-block;
+  border: 2px;
+  margin-right: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 17.5px 22.5px;
+  background-color: #1673ff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sub-main-btn {
+  display: inline-block;
+  border: 2px;
+  margin-right: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 17.5px 22.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.second-content {
+  margin: 109px 150px 109px 0px;
+}
+
+.second-content h3 {
+  text-transform: uppercase;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.first-dashboard {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
+  max-width: 1260px;
+}
+
+.first-dashboard-left {
+  flex: 1 1 0%;
+  justify-content: center;
+}
+
+.first-dashboard-left img {
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 90%;
+  justify-self: center;
+}
+
+.first-dashboard-right {
+  flex: 1 1 0%;
+}
+
+.first-dashboard-right span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.first-dashboard-right h2 {
+  margin-bottom: 40px;
+  font-size: 52px;
+  letter-spacing: -0.03em;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.first-dashboard-right-txt {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.first-dashboard-right-txt p a {
+  text-decoration: none;
+  color: rgb(22, 115, 255);
+}
+
+.second-dashboard {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
+  max-width: 1260px;
+}
+
+.second-dashboard-left {
+  flex: 1 1 0%;
+}
+
+.second-dashboard-left p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.second-dashboard-left span {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.second-dashboard-left h2 {
+  font-size: 52px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.second-dashboard-left ul {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  list-style: none;
+}
+
+.second-dashboard-left ul li {
+  padding-left: 20px;
+  position: relative;
+  box-sizing: border-box;
+  display: list-item;
+}
+
+.second-dashboard-left ul li::before {
+  position: absolute;
+  content: "L";
+  left: 0px;
+  top: 0px;
+  transform: scaleX(-1) rotate(324deg);
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(22, 115, 255);
+  font-family: arial;
+}
+
+.second-dashboard-right {
+  margin-left: 50px;
+  flex: 1 1 0%;
+  display: block;
+}
+
+.second-dashboard-right img {
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 90%;
+  justify-self: center;
+}
