@@ -242,7 +242,11 @@ up-signature::before {
 }
 
 .one-block {
-  background-color: rgb(10, 18, 30);
+  background-color: rgb(5, 8, 14);
+}
+
+.third-dashboard {
+  background-color: rgb(26, 32 44);
 }
 
 .label-info {
@@ -449,4 +453,23 @@ up-signature::before {
 .up-block-content-txt {
   box-sizing: border-box;
   display: block;
+}
+
+.three-block {
+  margin-top: 15rem;
+  position: relative;
+  max-width: 1260px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 2rem;
+}
+
+.cube {
+  
+  flex: 0 1 30%;
+}
+
+.cubes-row{
+  display: flex;
+  flex-wrap: wrap;
 }
