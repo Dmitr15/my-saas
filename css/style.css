@@ -365,8 +365,8 @@ body {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  padding: 1.75rem 2.25rem;
-  font-size: 1.2rem;
+  padding: 17.5px 22.5px;
+  font-size: 12px;
   transition: transform 0.3s;
   backface-visibility: hidden;
   display: inline-block;
@@ -380,7 +380,7 @@ body {
   display: inline-block;
   margin-left: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -429,7 +429,7 @@ body {
 
 .third-dashboard-titles h2 {
   margin-top: 1rem;
-  font-size: 5.2rem;
+  font-size: 52px;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -625,7 +625,7 @@ body {
 }
 
 .vertical-txt-title {
-  font-size: 1.8rem;
+  font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -698,6 +698,7 @@ footer {
 .links-row {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 .footer-column {
@@ -708,12 +709,11 @@ footer {
 .site-link {
   display: flex;
   flex-direction: column;
-  /* margin-top: 1rem; */
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .links-row {
-  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .footer-column-row {
@@ -725,7 +725,7 @@ footer {
 
 .footer-column-title {
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 22.5px;
   margin-bottom: 2.5rem;
 }
 
@@ -740,4 +740,73 @@ footer {
 .footer-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 6rem;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+/* menu */
+.menu {
+  padding: 15px 0;
+  position: sticky;
+  max-height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  z-index: 8888;
+  top: 0px;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  display: flex;
+  /* align-items: start; */
+  align-items: center;
+  color: white;
+}
+
+.menu-btn h4 {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-links div a {
+  color: rgb(237, 237, 238, 0.75);
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 2;
+  opacity: 0.8;
+  font-weight: 700;
+  padding: 7.5px 15px;
+  letter-spacing: 0.325px;
+}
+
+.menu-links div {
+  margin-right: 20px;
+}
+
+.sign-up {
+  background-color: rgb(22, 115, 255);
+  padding: 7.5px 15px;
+  border-radius: 4px;
+  color: white;
+  opacity: 1;
+  font-size: 13px;
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: 700;
 }
