@@ -669,6 +669,7 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -693,7 +694,7 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 5;
   opacity: 0.6;
   margin-top: 20px;
   text-size-adjust: 100%;
