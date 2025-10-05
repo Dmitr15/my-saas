@@ -607,6 +607,7 @@ body {
 
 .vertical {
   width: 100%;
+  margin-top: 100px;
 }
 
 .vertical-titles {
@@ -683,11 +684,6 @@ body {
   }
 }
 
-/* scroll-first */
-.scroll-first {
-  margin-top: 150px;
-}
-
 .vertical-txt-body {
   font-size: 16px;
   overflow: hidden;
@@ -707,6 +703,115 @@ body {
 .vertical-txt {
   padding: 0px 2rem;
   margin-bottom: 20px;
+}
+
+/* scroll-first */
+
+.scroll-first {
+  margin-top: 150px;
+  position: relative;
+}
+
+.scroll-first-row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll-first-item {
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-first-author {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.scroll-first-item {
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+
+.scroll-first-item-img {
+  margin-bottom: 50px;
+}
+
+.scroll-first-author-img img {
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+}
+
+.scroll-first-author-img {
+  margin-right: 10px;
+}
+
+.scroll-first-item-txt {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.scroll-first-author-txt {
+  text-align: left;
+  font-size: 14px;
+}
+
+.scroll-first-author-txt div:first-child {
+  font-weight: normal;
+  margin: 0px;
+}
+
+.scroll-first-author-txt div:nth-child(2) {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.scroll-first .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(26, 32, 44);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-first-item.displaySlide {
+  display: block;
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.scroll-first .button.prev {
+  left: 20px;
+}
+
+.scroll-first .button.next {
+  right: 20px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* svg */
