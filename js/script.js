@@ -67,7 +67,6 @@ function loadTheme() {
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', function () {
-    // Загружаем сохраненную тему
     loadTheme();
 
     // Добавляем обработчик события на кнопку переключения темы
@@ -78,4 +77,19 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleTheme();
         });
     }
+});
+
+const hamburger = document.querySelector('.hamburger');
+const menuLinks = document.querySelector('.menu-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menuLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        menuLinks.classList.remove('active');
+    });
 });
