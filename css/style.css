@@ -68,6 +68,21 @@ body {
   position: static;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-secondary);
+}
+
 /* first-sec */
 
 .first-sec {
@@ -990,10 +1005,6 @@ nav.menu {
   color: var(--text-secondary) !important;
 }
 
-.menu-links div {
-  margin-right: 20px;
-}
-
 .sign-up {
   background-color: rgb(22, 115, 255);
   padding: 7.5px 15px;
@@ -1145,6 +1156,52 @@ nav.menu {
 
   .third-dashboard-img {
     margin: 20px;
+  }
+
+  .menu-row {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-links {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--bg-primary) !important;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .menu-link {
+    margin: 8px 0;
+  }
+
+  .menu-links.active {
+    left: 0;
+  }
+
+  .night {
+    margin-top: 10px;
   }
 }
 
