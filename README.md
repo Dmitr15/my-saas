@@ -1,48 +1,57 @@
-# My SaaS Startup — Лэндинг
+# My SaaS Startup - Modern Landing Page
 
-Краткое описание  
-Проект — учебный лендинг для SaaS продукта: адаптивная верстка, слайдеры, секции с преимуществами и отзывами, переключение светлой/тёмной темы.
+A professional, fully responsive landing page for a SaaS startup with light/dark theme support, interactive elements, and smooth animations.
 
-Структура репозитория
-- index.html — главная страница
-- css/
-  - style.css — основные стили
-  - styles_zeroing.css — reset / сброс стилей
-- js/
-  - script.js — логика слайдера, переключение темы, меню
-- img/ — все изображения и иконки
+## Features
+- Theme Toggling – Light and dark themes with choice persistence in localStorage
+- Full Responsiveness – Perfect display on all devices (mobile, tablet, desktop)
+- Modern Design – Clean interface with focus on contrast and usability
+- Interactive Elements:
+   - Infinite partner logo slider
+   - Testimonial slider with auto-rotation
+   - Animated cards and sections
+   - Hamburger menu for mobile devices
 
-Запуск
-1. Клонировать/скопировать проект.
-2. Открыть `index.html` в браузере (двойной клик или через Live Server в VS Code).
+## Stack:
+- HTML5 – Semantic markup
+- CSS3 – CSS Custom Properties, Flexbox, Grid, animations
+- JavaScript – Slider controls, theme switching, menu management
 
-Ключевой функционал
-- Автопереключаемый слайдер отзывов с кнопками prev/next.
-- Переключение темы (сохраняется в localStorage).
-- Адаптивная вёрстка (медиа-запросы для разных ширин).
-- Несколько секций: хедер, партнёры, преимущества, отзывы, футер.
+## Quick Start
+1. Clone the repository:
+  ```bash
+    git clone https://github.com/Dmitr15/simple-login.git
+  ```
+2. Open `index.html` in your browser – no build process required!
 
-Коротко о реализации
-- Стили: используются CSS-переменные для тем в селекторах `[data-theme="light"]` и `[data-theme="dark"]`.
-- Скрипт: `js/script.js` — выбор слайдов, автопрокрутка, обработчики кнопок и переключение темы.
+## Key Sections
+- Header – Logo, navigation, sign-up button, theme toggle
+- Hero Section – Headline, description, call-to-action buttons
+- Partners – Infinite logo slider
+- Features – Cards with icons and descriptions
+- Testimonials – Interactive testimonial slider
+- Vertical Feed – Animated horizontal-scrolling cards
+- Footer – Links, social media, copyright
 
-Известные проблемы и быстрые решения
-- Кнопки `.button.prev` и `.button.next` могут не отображать стрелки:
-  - Причина: у кнопок используются <button> с вложенными <img>, а в CSS ожидается фон через `background-image`. Решения: либо использовать фон в CSS, либо убрать фон и показывать <img> внутри кнопки (как в HTML).
-  - Пример CSS (если хотите фон-стрелки):
-    ```css
-    .scroll-first .button.prev { background-image: url('../img/download_arr1.svg'); }
-    .scroll-first .button.next { background-image: url('../img/download_2_arr.svg'); }
-    ```
-- Автопрокрутка слишком редкая после ручного переключения:
-  - В `js/script.js` при инициализации интервал = 5000 ms, но в функции `showSlide` интервал устанавливается на 50000 ms (опечатка). Замените `50000` на `5000` для консистентности.
-- Ошибки выбора элементов:
-  - Скрипт ожидает элементы `.button.prev`/`.button.next`. Убедитесь, что они существуют в DOM до навешивания обработчиков (например, код выполняется после DOMContentLoaded).
+ 
+## Screen forms(Dark mode):
+<img width="1889" height="829" alt="image" src="https://github.com/user-attachments/assets/328a3b41-a378-4424-84b5-e7b651aaa90f" />
+<img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/9f63e162-81f5-4ae0-a55e-024049595b3b" />
+<img width="1891" height="638" alt="image" src="https://github.com/user-attachments/assets/9ef18e70-61ec-4575-b5b6-56c162a0510d" />
+<img width="1890" height="774" alt="image" src="https://github.com/user-attachments/assets/b929aad7-0f27-43e6-8b04-bee92ced832f" />
+<img width="1891" height="897" alt="image" src="https://github.com/user-attachments/assets/39a7011e-f260-42fa-91e7-05f3ce328b2f" />
+<img width="1893" height="938" alt="image" src="https://github.com/user-attachments/assets/22aca264-a9f3-481c-bfe7-e8bf39c694b4" />
+<img width="1892" height="892" alt="image" src="https://github.com/user-attachments/assets/82e8d74c-bdb2-4f98-89a3-3c60d4ec1373" />
 
-Рекомендации по разработке
-- Проверять консоль браузера на ошибки (F12 → Console).
-- Для быстрой отладки используйте Live Server в VS Code.
-- Храните повторяющиеся значения (например длительность слайдера) в одной константе в `script.js`.
+<br>
 
-Лицензия  
-Проект для учебных целей. Использование и модификация — свободны.
+## Screen forms(Light mode):
+<img width="1891" height="833" alt="image" src="https://github.com/user-attachments/assets/a6168e8d-b3e8-41ab-a2bd-fa316343d702" />
+<img width="1895" height="911" alt="image" src="https://github.com/user-attachments/assets/b336f0a3-171c-47b2-8705-9df5ffccd563" />
+<img width="1889" height="629" alt="image" src="https://github.com/user-attachments/assets/cf692e20-dabe-4bc4-94eb-18867cf8b1f5" />
+<img width="1884" height="696" alt="image" src="https://github.com/user-attachments/assets/5bf20acf-9dfd-49e7-951d-cd28e1e60eb0" />
+<img width="1885" height="885" alt="image" src="https://github.com/user-attachments/assets/68c47d7f-534f-47d3-a9bb-3ea27fb08861" />
+<img width="1888" height="895" alt="image" src="https://github.com/user-attachments/assets/ceaec5ff-d0e9-4867-9c64-e38a523b4573" />
+<img width="1879" height="919" alt="image" src="https://github.com/user-attachments/assets/6acf0745-e739-4199-9424-2ff50c873250" />
+
+
