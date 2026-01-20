@@ -1,0 +1,35 @@
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7fafc;
+  --bg-tertiary: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --accent-color: #1673ff;
+  --border-color: #e2e8f0;
+  --column-body-color: #2d3748;
+  --third-dashboard-column: rgb(201, 205, 212);
+  --first-scroll-btns: #ffffff;
+  --last-carousel-column: #c8ccd1;
+  --site-links: #2d3748;
+  --sub-main-btn-color: #2d3748;
+  --info-btn-right-color: #2d3748;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #2d3748;
+  --bg-secondary: #1a202c;
+  --bg-tertiary: #0a121e;
+  --text-primary: #ffffff;
+  --text-secondary: #e2e8f0;
+  --text-muted: #a0aec0;
+  --accent-color: #1673ff;
+  --border-color: #4a5568;
+  --column-body-color: #e2e8f0;
+  --third-dashboard-column: rgb(45, 55, 72);
+  --first-scroll-btns: rgb(26, 32, 44);
+  --last-carousel-column: rgb(45, 55, 72);
+  --site-links: rgba(255, 255, 255, 0.75);
+  --sub-main-btn-color: white;
+  --info-btn-right-color: white;
+}
